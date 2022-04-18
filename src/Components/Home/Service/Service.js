@@ -1,8 +1,15 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const Service = (props) => {
     const { name,picture,address} =props.service
+    const navigate = useNavigate()
+    const showReviews =()=>{
+    const path =`/cheakout/`;
+    navigate(path);
+    }
+
     return (
         <div className='container'>
             <div className="row">
@@ -14,7 +21,7 @@ const Service = (props) => {
     <Card.Text>
      {address}
     </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
+    <Button onClick={()=>navigate('/cheakout')} variant="primary">Go somewhere</Button>
   </Card.Body>
 </Card>
                 </div>
