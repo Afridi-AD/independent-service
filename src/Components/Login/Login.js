@@ -92,7 +92,7 @@ const handleRegisterdChange=(event)=>{
         <div>
 
 <div className="registration w-50 mx-auto">
-<h2 className='text-primary'>Please {registered ? 'Login':'Register' }</h2>
+<h2 className='text-primary text-center mt-2'>Please {registered ? 'Login':'Register' }</h2>
 
 <Form onSubmit={handleSubmit}>
   <Form.Group className="mb-3" controlId="formBasicEmail">
