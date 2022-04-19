@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, sendEmailVerification, signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth';
+import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, sendEmailVerification, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth';
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import app from '../../firebase.init';
@@ -78,6 +78,13 @@ event.preventDefault()
     
 }
 
+const handlePasswordReset= ()=>{
+  sendPasswordResetEmail(auth,email)
+  .then(()=>{
+    console.log('email sent')
+  })
+}
+
 const verfyEmail =()=>{
 
     sendEmailVerification(auth.currentUser)
@@ -110,6 +117,7 @@ const handleRegisterdChange=(event)=>{
   <Form.Group className="mb-3" controlId="formBasicCheckbox">
     <Form.Check onChange={handleRegisterdChange} type="checkbox" label="All ready Registered" />
   </Form.Group>
+  <Button onClick={handlePasswordReset} variant="link">Forget Password?</Button>
   <Button variant="primary" type="submit">
     {registered ? 'Login' : 'Register'}
   </Button>
