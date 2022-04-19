@@ -19,7 +19,7 @@ const Home = () => {
         <div className='text-center'>
         <Banner></Banner>
         </div>
-
+           <h1 className='text-center mb-4'>Our Services...</h1>
            <div className='d-flex' >
                
            {
