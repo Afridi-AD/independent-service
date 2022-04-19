@@ -9,7 +9,7 @@ import useFirebase from '../../Hooks/useFirebase';
 const auth = getAuth(app);
 
 const Login = () => {
-  const {signInwithgoogle} = useFirebase();
+  const {signInwithgoogle} = useFirebase()
   const [validated, setValidated] = useState(false);
   const [user, setUser] = useState({});
   const [email, setEmail] = useState('');
