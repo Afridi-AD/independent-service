@@ -9,6 +9,7 @@ import Login from './Components/Login/Login';
 import app from './firebase.init';
 import {getAuth} from 'firebase/auth';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AboutMe from './Components/AboutMe/AboutMe';
 
 
 const auth = getAuth(app);
@@ -23,6 +24,8 @@ function App() {
       <Route path='/login' element ={<Login></Login>}></Route>
       <Route path='/services'></Route>
       <Route path='/cheakout' element={<Cheakout></Cheakout>}></Route>
+      <Route path='/about' element={<AboutMe></AboutMe>}></Route>
+
     </Routes>
     <Footer></Footer>
 
