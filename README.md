@@ -6,4 +6,4 @@
 * Email verification 
 * forget password email verification
 
-* I have used javasCript library react.js , Bootstrap css framework , react router dome , javaScript, google firebase,jsx etc..
+# I have used javasCript library react.js , Bootstrap css framework , react router dome , javaScript, google firebase,jsx etc..
