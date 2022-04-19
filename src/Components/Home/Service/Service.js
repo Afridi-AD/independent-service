@@ -11,9 +11,9 @@ const Service = (props) => {
     }
 
     return (
-        <div className='container'>
-            <div className="row">
-                <div className="col-lg-12">
+        <div className='container '>
+            <div className="row col-lg-12 col-md-6">
+                <div className="col-lg-12 col-md-6">
                 <Card style={{ width: '18rem' }}>
   <Card.Img variant="top" src={picture} />
   <Card.Body>
@@ -21,7 +21,7 @@ const Service = (props) => {
     <Card.Text>
      {address}
     </Card.Text>
-    <Button onClick={()=>navigate('/cheakout')} variant="primary">Go somewhere</Button>
+    <Button onClick={()=>navigate('/cheakout')} variant="primary">Get Appointment</Button>
   </Card.Body>
 </Card>
                 </div>

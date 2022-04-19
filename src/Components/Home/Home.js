@@ -15,12 +15,12 @@ const Home = () => {
 
     return (
        
-        <div>
-        <div>
+        <div  className=' col-lg-12 col-md-6 '>
+        <div className='text-center'>
         <Banner></Banner>
         </div>
 
-           <div className='d-flex'>
+           <div className='d-flex' >
                
            {
                 services.map(service => <Service key={service.id}
@@ -31,7 +31,7 @@ const Home = () => {
             }
            </div>
           
-
+           <Footer></Footer>
             
         </div>
         
