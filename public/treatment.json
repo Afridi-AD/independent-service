@@ -16,5 +16,23 @@
     "picture": "https://www.chennainationalhospital.com/images/service/cardiology.jpg",
     "name": "Arrhythmia",
     "address": "In dilated cardiomyopathy the heart chambers become dilated meaning that the heart muscle and become thinner."
+  },
+  {
+    "id": "625d0d7c54d0bab6a3f32009",
+    "picture": "https://i.ibb.co/8bGWZY0/cardio.jpg",
+    "name": "Heart Bypass Surgery",
+    "address": "A Holter monitor is a portable ECG device you wear to continuously record your heart rhythm, usually for 24 to 72 hours. Holter monitoring is used to detect heart rhythm problems that aren't found during a regular ECG exam.."
+  },
+  {
+    "id": "625d0d7c54d0bab6a3f32009",
+    "picture": "https://i.ibb.co/jbTbysW/cardio-theropy-surgery.jpg",
+    "name": "Cardioversion.",
+    "address": "This noninvasive exam uses sound waves to produce detailed images of your heart's structure. It shows how your heart beats and pumps blood."
+  },
+  {
+    "id": "625d0d7c54d0bab6a3f32009",
+    "picture": "https://i.ibb.co/t3NL6Ky/images.jpg",
+    "name": "Valve Disease Treatment",
+    "address": "This type of test involves raising your heart rate with exercise or medicine while performing heart tests and imaging to check how your heart responds.."
   }
 ]

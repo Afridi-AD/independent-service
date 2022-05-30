@@ -5,9 +5,9 @@ const Footer = () => {
     const today = new Date();
     const year = today.getUTCFullYear();
     return (
-        <div className='text-center'>
-            <footer>
-                <p> <small> copyright @{year} </small></p>
+        <div className='text-center bg-secondary'>
+            <footer >
+                <p> <small> copyright @{year} All right reserver by PH </small></p>
             </footer>
         </div>
     );
