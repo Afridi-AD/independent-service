@@ -13,7 +13,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const auth = getAuth(app);
 
 const Login = () => {
-  // const {signInWithGoogle} = useFirebase()
+  
   const location = useLocation();
   const navigate = useNavigate();
   const [validated, setValidated] = useState(false);
@@ -37,7 +37,7 @@ const Login = () => {
 
       })
       .catch(error => {
-        console.log(error)
+        console.error(error);
       })
   }
 
@@ -84,7 +84,7 @@ const Login = () => {
       signInWithEmailAndPassword(auth, email, password)
         .then(result => {
           const user = result.user;
-          console.log('user login',user);
+          
 
         })
         .catch(error => {
@@ -126,7 +126,7 @@ const Login = () => {
       displayName : name
     })
     .then(()=>{
-      console.log('name update')
+      
     })
     .catch(error=>{
       setError(error.message);
@@ -137,7 +137,7 @@ const Login = () => {
 
     sendEmailVerification(auth.currentUser)
       .then(() => {
-        console.log('email verification sent')
+        toast(' Email verification sent')
       })
   }
   const handleRegisterdChange = (event) => {
