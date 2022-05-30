@@ -15,30 +15,55 @@ const Home = () => {
     
 
     return (
-       
-        <div  className=' col-md-6 col-lg-12'>
-        <div className='text-center'>
-        <Banner></Banner>
-        </div>
-           <h1 className='text-center mb-4'>Our Services...</h1>
-           <div className='d-flex col-md-6 col-lg-12' >
-               
-           {
+
+    <section className='container'>
+ 
+<div className="row">
+<Banner></Banner>
+</div>
+<div className="row">
+<h1 className='text-center mb-4 text-success'>Our Services...</h1>
+</div>
+<div className="row">
+    <div className="d-flex col-md-6 col-lg-3">
+       {
                 services.slice(0,3).map(service => <Service key={service.id}
                 service={service}
                 >
 
                 </Service>)
             }
-           </div>
+    </div>
+    <div className="row">
+    <Review></Review>
+    </div>
+    <Footer></Footer>
+</div>
+    </section>
+       
+        // <div  className=' '>
+        // <div className='text-center'>
+        // <Banner></Banner>
+        // </div>
+        //    <h1 className='text-center mb-4'>Our Services...</h1>
+        //    <div className='d-flex col-md-6 col-lg-12' >
+               
+        //    {
+        //         services.slice(0,3).map(service => <Service key={service.id}
+        //         service={service}
+        //         >
 
-           <div className='justify-content-center align-items-center'>
-               <Review></Review>
-           </div>
+        //         </Service>)
+        //     }
+        //    </div>
+
+        //    <div className='justify-content-center align-items-center'>
+        //        <Review></Review>
+        //    </div>
           
-           <Footer></Footer>
+        //    <Footer></Footer>
             
-        </div>
+        // </div>
         
     
     );
